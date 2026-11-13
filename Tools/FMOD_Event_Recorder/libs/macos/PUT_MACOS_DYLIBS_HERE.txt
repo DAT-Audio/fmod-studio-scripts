@@ -1,0 +1,29 @@
+Put the macOS FMOD Engine libraries here:
+
+    libfmod.dylib
+    libfmodstudio.dylib
+
+WHY AREN'T THEY INCLUDED?  FMOD's position is that people who make tools or
+scripts must not publish or share the FMOD Engine libraries (.dll / .dylib)
+with them. Everyone who uses this tool downloads their own copy from fmod.com
+(a free account, accepting FMOD's licence), so we never redistribute them.
+
+Get them from the FMOD Engine download for macOS (fmod.com -> Download ->
+FMOD Engine -> Mac). Open the downloaded .dmg and copy the *release* (non-"L")
+versions from:
+    api/core/lib/libfmod.dylib
+    api/studio/lib/libfmodstudio.dylib
+(libfmodL.dylib / libfmodstudioL.dylib are the logging builds - not needed.)
+
+WHICH VERSION?  2.03.x is recommended (tested with 2.03.20). Use a version at
+least as new as the FMOD Studio that built your banks: a 2.03.x engine renders
+2.02.x and 2.03.x banks. The recorder detects the version itself. The macOS
+libraries are universal (Apple silicon and Intel), so there's one folder.
+
+Put them in BEFORE running setup.command. Setup clears macOS quarantine on this
+folder for you; if you add or replace the libraries later, run setup.command
+again (it offers to skip the reinstall) or run:
+    xattr -dr com.apple.quarantine libs/macos
+
+Windows libraries go in ../windows/ (see PUT_WINDOWS_DLLS_HERE.txt there).
+More detail: ../../README.md (Setup, step 2).

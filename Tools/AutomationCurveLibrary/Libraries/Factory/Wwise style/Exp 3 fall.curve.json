@@ -1,0 +1,23 @@
+{
+  "format": "dat-automation-curve",
+  "version": 1,
+  "id": "factory-wwise-style-exp-3-fall",
+  "name": "Exp 3 fall",
+  "description": "Like Wwise's Exp3, falling: holds, then drops fast.",
+  "points": [
+    {
+      "x": 0,
+      "y": 1,
+      "shape": 0.75,
+      "s": false
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "shape": 0.0,
+      "s": false
+    }
+  ],
+  "created": "2026-10-10T00:00:00.000Z",
+  "modified": "2026-10-10T00:00:00.000Z"
+}

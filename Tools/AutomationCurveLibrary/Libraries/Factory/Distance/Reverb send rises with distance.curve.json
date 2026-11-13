@@ -1,0 +1,23 @@
+{
+  "format": "dat-automation-curve",
+  "version": 1,
+  "id": "factory-distance-reverb-send-rises-with-distance",
+  "name": "Reverb send rises with distance",
+  "description": "For a send level or Wet Level: more reverb the further away.",
+  "points": [
+    {
+      "x": 0,
+      "y": 0.2,
+      "shape": -0.5,
+      "s": false
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "shape": 0.0,
+      "s": false
+    }
+  ],
+  "created": "2026-10-10T00:00:00.000Z",
+  "modified": "2026-10-10T00:00:00.000Z"
+}

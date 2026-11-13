@@ -1,0 +1,23 @@
+{
+  "format": "dat-automation-curve",
+  "version": 1,
+  "id": "factory-crossfades-laws-crossfade-in-4-5-db-compromise",
+  "name": "Crossfade in, -4.5 dB (compromise)",
+  "description": "The common compromise law: between equal power and linear.",
+  "points": [
+    {
+      "x": 0.0,
+      "y": 0.0,
+      "shape": -0.075,
+      "s": false
+    },
+    {
+      "x": 1,
+      "y": 1.0,
+      "shape": 0.0,
+      "s": false
+    }
+  ],
+  "created": "2026-10-10T00:00:00.000Z",
+  "modified": "2026-10-10T00:00:00.000Z"
+}

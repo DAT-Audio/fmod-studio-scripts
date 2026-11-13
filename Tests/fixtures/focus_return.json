@@ -1,0 +1,341 @@
+{
+ "type": "focus",
+ "kind": "return",
+ "selection": {
+  "count": 1,
+  "others": {},
+  "more": 0,
+  "source": "browser"
+ },
+ "graph": {
+  "mode": "return",
+  "focusId": "{4f4ca7ed-6703-46d9-ae28-bee80929fbb0}",
+  "focusIds": [
+   "{4f4ca7ed-6703-46d9-ae28-bee80929fbb0}"
+  ],
+  "highlight": null,
+  "nodes": [
+   {
+    "id": "{4f4ca7ed-6703-46d9-ae28-bee80929fbb0}",
+    "name": "Reverb",
+    "path": "",
+    "kind": "return",
+    "isFocus": true,
+    "depth": 0,
+    "label": "Return bus",
+    "color": "Default",
+    "strip": {
+     "id": "{4f4ca7ed-6703-46d9-ae28-bee80929fbb0}",
+     "type": "MixerReturn",
+     "kind": "Return bus",
+     "name": "Reverb",
+     "color": "Default",
+     "volume": 0,
+     "pitch": null,
+     "automation": [],
+     "modulation": [],
+     "effects": [
+      {
+       "id": "{cfcf9474-3028-44c1-bd25-23f444cdc345}",
+       "bypass": false,
+       "type": "MixerBusFader",
+       "kind": "Fader",
+       "name": "",
+       "fader": true,
+       "settings": {
+        "bypass": false,
+        "wetDryEnabled": false,
+        "wetDryMode": 0,
+        "activeWhenSilent": false,
+        "inputGainEnabled": false,
+        "wetMix": 100,
+        "baseWetLevel": 0,
+        "baseDryLevel": -80,
+        "inputGain": 0
+       },
+       "automation": [],
+       "modulation": [],
+       "snapshots": []
+      }
+     ],
+     "vcas": [],
+     "snapshots": []
+    }
+   },
+   {
+    "id": "{21cc3aa0-97e4-4636-b7b5-9e0e9934e9fc}",
+    "name": "Foley",
+    "path": "",
+    "kind": "bus",
+    "isFocus": false,
+    "depth": 1,
+    "label": "Bus",
+    "color": "Default",
+    "strip": {
+     "id": "{21cc3aa0-97e4-4636-b7b5-9e0e9934e9fc}",
+     "type": "MixerGroup",
+     "kind": "Bus",
+     "name": "Foley",
+     "color": "Default",
+     "volume": -2,
+     "pitch": 0,
+     "automation": [],
+     "modulation": [],
+     "effects": [
+      {
+       "id": "{1d29179e-50cb-4abf-82d7-1537bc757f1d}",
+       "bypass": false,
+       "type": "MixerBusFader",
+       "kind": "Fader",
+       "name": "",
+       "fader": true,
+       "settings": {
+        "bypass": false,
+        "wetDryEnabled": false,
+        "wetDryMode": 0,
+        "activeWhenSilent": false,
+        "inputGainEnabled": false,
+        "wetMix": 100,
+        "baseWetLevel": 0,
+        "baseDryLevel": -80,
+        "inputGain": 0
+       },
+       "automation": [],
+       "modulation": [],
+       "snapshots": []
+      },
+      {
+       "id": "{17a075f5-9485-4906-b45d-a9438635f2dc}",
+       "bypass": false,
+       "type": "MixerSend",
+       "kind": "Send",
+       "name": "",
+       "level": -10,
+       "to": "Reverb",
+       "settings": {
+        "bypass": false,
+        "wetDryEnabled": false,
+        "wetDryMode": 0,
+        "activeWhenSilent": false,
+        "inputGainEnabled": false,
+        "wetMix": 100,
+        "baseWetLevel": 0,
+        "baseDryLevel": -80,
+        "inputGain": 0,
+        "level": -10,
+        "inputFormat": 0
+       },
+       "automation": [],
+       "modulation": [],
+       "snapshots": []
+      }
+     ],
+     "vcas": [],
+     "snapshots": []
+    }
+   },
+   {
+    "id": "{68f1a933-000e-47c5-996a-161b1a30c8b8}",
+    "name": "A_leaf · Master",
+    "path": "event:/A_leaf",
+    "kind": "track",
+    "isFocus": false,
+    "depth": 1,
+    "label": "Master track",
+    "color": "Default",
+    "strip": {
+     "id": "{68f1a933-000e-47c5-996a-161b1a30c8b8}",
+     "type": "EventMixerMaster",
+     "kind": "Master track",
+     "name": "Master",
+     "color": "Default",
+     "volume": 0,
+     "pitch": 0,
+     "automation": [],
+     "modulation": [],
+     "effects": [
+      {
+       "id": "{d1146beb-73de-4222-a6bd-986f2972ffae}",
+       "bypass": false,
+       "type": "MixerBusFader",
+       "kind": "Fader",
+       "name": "",
+       "fader": true,
+       "settings": {
+        "bypass": false,
+        "wetDryEnabled": false,
+        "wetDryMode": 0,
+        "activeWhenSilent": false,
+        "inputGainEnabled": false,
+        "wetMix": 100,
+        "baseWetLevel": 0,
+        "baseDryLevel": -80,
+        "inputGain": 0
+       },
+       "automation": [],
+       "modulation": [],
+       "snapshots": []
+      },
+      {
+       "id": "{d9ca58e8-c50c-47a3-b25e-a86f556af041}",
+       "bypass": false,
+       "type": "MixerSend",
+       "kind": "Send",
+       "name": "",
+       "level": -6,
+       "to": "Reverb",
+       "settings": {
+        "bypass": false,
+        "wetDryEnabled": false,
+        "wetDryMode": 0,
+        "activeWhenSilent": false,
+        "inputGainEnabled": false,
+        "wetMix": 100,
+        "baseWetLevel": 0,
+        "baseDryLevel": -80,
+        "inputGain": 0,
+        "level": -6,
+        "inputFormat": 0
+       },
+       "automation": [],
+       "modulation": [],
+       "snapshots": []
+      }
+     ],
+     "vcas": [],
+     "snapshots": []
+    },
+    "event": {
+     "id": "{0d4d2e31-cc85-4fb3-82a9-a6b5c5ac25ba}",
+     "name": "A_leaf",
+     "path": "event:/A_leaf",
+     "snapshot": false,
+     "color": "Red"
+    }
+   },
+   {
+    "id": "{75cb9f6b-7733-4a4c-b77a-ecced5be7a05}",
+    "name": "Master Bus",
+    "path": "",
+    "kind": "bus",
+    "isFocus": false,
+    "depth": -1,
+    "label": "Master Bus",
+    "color": "Default",
+    "strip": {
+     "id": "{75cb9f6b-7733-4a4c-b77a-ecced5be7a05}",
+     "type": "MixerMaster",
+     "kind": "Master Bus",
+     "name": "Master Bus",
+     "color": "Default",
+     "volume": 0,
+     "pitch": 0,
+     "automation": [],
+     "modulation": [],
+     "effects": [
+      {
+       "id": "{84e51193-59b3-4f2e-ad76-c16144006884}",
+       "bypass": false,
+       "type": "MixerBusFader",
+       "kind": "Fader",
+       "name": "",
+       "fader": true,
+       "settings": {
+        "bypass": false,
+        "wetDryEnabled": false,
+        "wetDryMode": 0,
+        "activeWhenSilent": false,
+        "inputGainEnabled": false,
+        "wetMix": 100,
+        "baseWetLevel": 0,
+        "baseDryLevel": -80,
+        "inputGain": 0
+       },
+       "automation": [],
+       "modulation": [],
+       "snapshots": []
+      }
+     ],
+     "vcas": [],
+     "snapshots": []
+    }
+   }
+  ],
+  "edges": [
+   {
+    "send": {
+     "id": "{17a075f5-9485-4906-b45d-a9438635f2dc}",
+     "bypass": false,
+     "type": "MixerSend",
+     "kind": "Send",
+     "name": "",
+     "level": -10,
+     "to": "Reverb",
+     "settings": {
+      "bypass": false,
+      "wetDryEnabled": false,
+      "wetDryMode": 0,
+      "activeWhenSilent": false,
+      "inputGainEnabled": false,
+      "wetMix": 100,
+      "baseWetLevel": 0,
+      "baseDryLevel": -80,
+      "inputGain": 0,
+      "level": -10,
+      "inputFormat": 0
+     },
+     "automation": [],
+     "modulation": [],
+     "snapshots": []
+    },
+    "place": "Bus 'Foley'",
+    "id": "{17a075f5-9485-4906-b45d-a9438635f2dc}",
+    "kind": "send",
+    "childId": "{21cc3aa0-97e4-4636-b7b5-9e0e9934e9fc}",
+    "parentId": "{4f4ca7ed-6703-46d9-ae28-bee80929fbb0}"
+   },
+   {
+    "send": {
+     "id": "{d9ca58e8-c50c-47a3-b25e-a86f556af041}",
+     "bypass": false,
+     "type": "MixerSend",
+     "kind": "Send",
+     "name": "",
+     "level": -6,
+     "to": "Reverb",
+     "settings": {
+      "bypass": false,
+      "wetDryEnabled": false,
+      "wetDryMode": 0,
+      "activeWhenSilent": false,
+      "inputGainEnabled": false,
+      "wetMix": 100,
+      "baseWetLevel": 0,
+      "baseDryLevel": -80,
+      "inputGain": 0,
+      "level": -6,
+      "inputFormat": 0
+     },
+     "automation": [],
+     "modulation": [],
+     "snapshots": []
+    },
+    "place": "Master track 'Master'",
+    "id": "{d9ca58e8-c50c-47a3-b25e-a86f556af041}",
+    "kind": "send",
+    "childId": "{68f1a933-000e-47c5-996a-161b1a30c8b8}",
+    "parentId": "{4f4ca7ed-6703-46d9-ae28-bee80929fbb0}"
+   },
+   {
+    "id": "{4f4ca7ed-6703-46d9-ae28-bee80929fbb0}>{75cb9f6b-7733-4a4c-b77a-ecced5be7a05}",
+    "kind": "route",
+    "childId": "{4f4ca7ed-6703-46d9-ae28-bee80929fbb0}",
+    "parentId": "{75cb9f6b-7733-4a4c-b77a-ecced5be7a05}"
+   }
+  ],
+  "truncated": false,
+  "maxDepth": 8,
+  "maxNodes": 300
+ },
+ "params": {}
+}

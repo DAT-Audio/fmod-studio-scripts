@@ -1,0 +1,34 @@
+Put the Windows FMOD Engine libraries here:
+
+    fmod.dll
+    fmodstudio.dll
+
+WHY AREN'T THEY INCLUDED?  FMOD's position is that people who make tools or
+scripts must not publish or share the FMOD Engine libraries (.dll / .dylib)
+with them. Everyone who uses this tool downloads their own copy from fmod.com
+(a free account, accepting FMOD's licence), so we never redistribute them.
+
+Get them from the FMOD Engine download for Windows (fmod.com -> Download ->
+FMOD Engine -> Windows). Use the *release* (non-"L") versions from:
+    api\core\lib\<arch>\fmod.dll
+    api\studio\lib\<arch>\fmodstudio.dll
+
+WHICH ARCHITECTURE?  It must match the Python you run setup.bat with (the DLLs
+load into the Python process), NOT Windows itself:
+    - x64   : standard 64-bit Python (almost everyone). Use this by default.
+    - arm64 : only if you run a NATIVE ARM64 build of Python on a
+              Windows-on-ARM machine. (x64 Python also runs on ARM, emulated,
+              and uses the x64 DLLs.)
+    Check with:  python -c "import platform; print(platform.machine())"
+                 AMD64 -> x64      ARM64 -> arm64
+
+TWO LAYOUTS (either works - the recorder auto-picks):
+    1. Simple: drop the DLLs straight in this folder (libs\windows\).
+    2. Both arches in one bundle: put them in subfolders and the recorder
+       selects the one matching the running Python:
+           libs\windows\x64\fmod.dll,   libs\windows\x64\fmodstudio.dll
+           libs\windows\arm64\fmod.dll, libs\windows\arm64\fmodstudio.dll
+
+macOS libraries go in ..\macos\ (see PUT_MACOS_DYLIBS_HERE.txt there). The
+recorder chooses the right OS/arch folder automatically.
+More detail: ..\..\README.md (Setup, step 2).

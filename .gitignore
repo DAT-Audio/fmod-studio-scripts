@@ -1,0 +1,31 @@
+# Built apps: published as a zip on the Releases page, not committed
+Tools/*/curve_library
+Tools/*/curve_library.exe
+Tools/*/profiler_first_person
+Tools/*/profiler_first_person.exe
+Tools/*/reference_viewer
+Tools/*/reference_viewer.exe
+Tools/*/sandbox_first_person
+Tools/*/sandbox_first_person.exe
+
+# FMOD Engine libraries are never published (see README)
+*.dll
+*.dylib
+*.so
+*.lib
+
+# Local only
+CLAUDE.md
+AGENTS.md
+.claude/
+.DS_Store
+__pycache__/
+*.zip
+
+# Event Recorder writes this next to itself
+recorder_debug.log
+
+# Curve Library user libraries (the app creates "My Curves" when it runs); only Factory ships
+Tools/AutomationCurveLibrary/Libraries/*
+!Tools/AutomationCurveLibrary/Libraries/Factory/
+target/

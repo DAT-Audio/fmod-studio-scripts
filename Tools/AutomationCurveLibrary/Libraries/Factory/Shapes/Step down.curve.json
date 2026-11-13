@@ -1,0 +1,35 @@
+{
+  "format": "dat-automation-curve",
+  "version": 1,
+  "id": "factory-shapes-step-down",
+  "name": "Step down",
+  "description": "Switches from high to low halfway.",
+  "points": [
+    {
+      "x": 0,
+      "y": 1,
+      "shape": 0.0,
+      "s": false
+    },
+    {
+      "x": 0.49,
+      "y": 1,
+      "shape": 0.0,
+      "s": false
+    },
+    {
+      "x": 0.51,
+      "y": 0,
+      "shape": 0.0,
+      "s": false
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "shape": 0.0,
+      "s": false
+    }
+  ],
+  "created": "2026-10-10T00:00:00.000Z",
+  "modified": "2026-10-10T00:00:00.000Z"
+}

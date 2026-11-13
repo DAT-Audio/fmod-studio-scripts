@@ -1,0 +1,131 @@
+{
+ "type": "focus",
+ "kind": "snapshot",
+ "selection": {
+  "count": 1,
+  "others": {},
+  "more": 0,
+  "source": "browser"
+ },
+ "snapshot": {
+  "id": "{326c2fcf-0d09-4651-9772-8fbfd8afd037}",
+  "name": "Duck",
+  "path": "snapshot:/Duck",
+  "snapshot": true,
+  "color": "Default",
+  "behavior": 0,
+  "intensity": 100,
+  "macros": {
+   "settings": {
+    "isPersistent": false,
+    "maxVoices": 65,
+    "voiceStealing": 0,
+    "priority": 2,
+    "dopplerEnabled": false,
+    "dopplerScale": 100,
+    "snapshotIntensity": 100,
+    "minimumDistance": 1,
+    "maximumDistance": 20,
+    "noLookahead": false,
+    "triggerCooldown": 0,
+    "sampleDataLoadingMode": 0
+   },
+   "automation": [],
+   "modulation": []
+  },
+  "properties": [
+   {
+    "id": "{c6b6d318-e240-4465-89ae-07d424855e30}",
+    "property": "volume",
+    "value": -9,
+    "target": "Bus 'SFX'",
+    "targetId": "{098c9081-b78f-4b5c-94b8-bd9949a36327}",
+    "base": -3,
+    "automation": [],
+    "modulation": []
+   }
+  ],
+  "scoped": [],
+  "triggers": [
+   {
+    "id": "{e22d92dd-a720-4106-bdf6-5cbd216d0b5b}",
+    "type": "SnapshotModule",
+    "kind": "Snapshot instrument",
+    "name": "Duck",
+    "volume": 0,
+    "pitch": 0,
+    "probabilityOn": false,
+    "probability": 100,
+    "conditionMode": 0,
+    "conditions": [],
+    "delay": {
+     "type": 1,
+     "min": 0,
+     "max": 0
+    },
+    "start": 0,
+    "length": 1,
+    "startOffset": 0,
+    "async": false,
+    "cutoff": false,
+    "looping": false,
+    "quantization": 0,
+    "maxVoices": 65,
+    "automation": [],
+    "modulation": [],
+    "params": [],
+    "intensity": 60,
+    "event": {
+     "id": "{4f71b706-b3b4-4687-a429-9881fd69fd50}",
+     "name": "C_top",
+     "path": "event:/C_top",
+     "snapshot": false,
+     "color": "Default"
+    },
+    "track": {
+     "id": "{e1614e66-0379-42b9-a0d2-7297b873aa40}",
+     "type": "GroupTrack",
+     "name": "C track",
+     "strip": {
+      "id": "{bc6f0e8c-e996-4ba9-b326-d779d03e0d23}",
+      "type": "EventMixerGroup",
+      "kind": "Track",
+      "name": "C track",
+      "color": "Default",
+      "volume": 0,
+      "pitch": 0,
+      "automation": [],
+      "modulation": [],
+      "effects": [
+       {
+        "id": "{0a70fa7e-4937-4718-b803-0f6884d2afa9}",
+        "bypass": false,
+        "type": "MixerBusFader",
+        "kind": "Fader",
+        "name": "",
+        "fader": true,
+        "settings": {
+         "bypass": false,
+         "wetDryEnabled": false,
+         "wetDryMode": 0,
+         "activeWhenSilent": false,
+         "inputGainEnabled": false,
+         "wetMix": 100,
+         "baseWetLevel": 0,
+         "baseDryLevel": -80,
+         "inputGain": 0
+        },
+        "automation": [],
+        "modulation": [],
+        "snapshots": []
+       }
+      ],
+      "vcas": [],
+      "snapshots": []
+     }
+    }
+   }
+  ]
+ },
+ "params": {}
+}

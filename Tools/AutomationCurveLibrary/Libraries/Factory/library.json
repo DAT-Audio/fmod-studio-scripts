@@ -1,0 +1,7 @@
+{
+  "format": "dat-curve-library",
+  "version": 1,
+  "name": "Factory",
+  "readOnly": true,
+  "description": "Base curves that ship with the Automation Curve Library. Read-only: copy a curve to one of your libraries to change it."
+}

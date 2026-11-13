@@ -1,0 +1,29 @@
+{
+  "format": "dat-automation-curve",
+  "version": 1,
+  "id": "factory-for-db-and-hz-frequency-10-hz-to-22-khz-sweep-down-20-khz-to-20-hz-even-octaves",
+  "name": "Sweep down 20 kHz to 20 Hz (even octaves)",
+  "description": "The reverse.",
+  "points": [
+    {
+      "x": 0.0,
+      "y": 0.909,
+      "shape": -0.1,
+      "s": false
+    },
+    {
+      "x": 0.15,
+      "y": 0.3222,
+      "shape": -1.0,
+      "s": false
+    },
+    {
+      "x": 1,
+      "y": 0.0005,
+      "shape": 0.0,
+      "s": false
+    }
+  ],
+  "created": "2026-10-10T00:00:00.000Z",
+  "modified": "2026-10-10T00:00:00.000Z"
+}

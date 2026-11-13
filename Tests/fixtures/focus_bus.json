@@ -1,0 +1,377 @@
+{
+ "type": "focus",
+ "kind": "bus",
+ "selection": {
+  "count": 1,
+  "others": {},
+  "more": 0,
+  "source": "browser"
+ },
+ "graph": {
+  "mode": "bus",
+  "focusId": "{098c9081-b78f-4b5c-94b8-bd9949a36327}",
+  "focusIds": [
+   "{098c9081-b78f-4b5c-94b8-bd9949a36327}"
+  ],
+  "highlight": null,
+  "nodes": [
+   {
+    "id": "{098c9081-b78f-4b5c-94b8-bd9949a36327}",
+    "name": "SFX",
+    "path": "",
+    "kind": "bus",
+    "isFocus": true,
+    "depth": 0,
+    "label": "Bus",
+    "color": "Blue",
+    "strip": {
+     "id": "{098c9081-b78f-4b5c-94b8-bd9949a36327}",
+     "type": "MixerGroup",
+     "kind": "Bus",
+     "name": "SFX",
+     "color": "Blue",
+     "volume": -3,
+     "pitch": 0,
+     "automation": [],
+     "modulation": [],
+     "effects": [
+      {
+       "id": "{7bb03664-657c-43fe-b632-43c8f98a7d69}",
+       "bypass": false,
+       "type": "MixerBusFader",
+       "kind": "Fader",
+       "name": "",
+       "fader": true,
+       "settings": {
+        "bypass": false,
+        "wetDryEnabled": false,
+        "wetDryMode": 0,
+        "activeWhenSilent": false,
+        "inputGainEnabled": false,
+        "wetMix": 100,
+        "baseWetLevel": 0,
+        "baseDryLevel": -80,
+        "inputGain": 0
+       },
+       "automation": [],
+       "modulation": [],
+       "snapshots": []
+      },
+      {
+       "id": "{64e1894d-1103-40d4-88b6-6e2367e42c72}",
+       "bypass": false,
+       "type": "GainEffect",
+       "kind": "Gain",
+       "name": "",
+       "gain": -6,
+       "settings": {
+        "bypass": false,
+        "wetDryEnabled": false,
+        "wetDryMode": 0,
+        "activeWhenSilent": false,
+        "inputGainEnabled": false,
+        "wetMix": 100,
+        "baseWetLevel": 0,
+        "baseDryLevel": -80,
+        "inputGain": 0,
+        "gain": -6
+       },
+       "automation": [],
+       "modulation": [],
+       "snapshots": []
+      }
+     ],
+     "vcas": [
+      {
+       "id": "{2f1d4767-6846-484d-b76f-4d204f89da20}",
+       "name": "VCA SFX",
+       "volume": -4,
+       "automation": [],
+       "snapshots": []
+      }
+     ],
+     "snapshots": [
+      {
+       "snapshot": {
+        "id": "{326c2fcf-0d09-4651-9772-8fbfd8afd037}",
+        "name": "Duck",
+        "path": "snapshot:/Duck",
+        "snapshot": true,
+        "color": "Default"
+       },
+       "property": "volume",
+       "value": -9,
+       "intensity": 100,
+       "automation": []
+      }
+     ]
+    }
+   },
+   {
+    "id": "{21cc3aa0-97e4-4636-b7b5-9e0e9934e9fc}",
+    "name": "Foley",
+    "path": "",
+    "kind": "bus",
+    "isFocus": false,
+    "depth": 1,
+    "label": "Bus",
+    "color": "Default",
+    "strip": {
+     "id": "{21cc3aa0-97e4-4636-b7b5-9e0e9934e9fc}",
+     "type": "MixerGroup",
+     "kind": "Bus",
+     "name": "Foley",
+     "color": "Default",
+     "volume": -2,
+     "pitch": 0,
+     "automation": [],
+     "modulation": [],
+     "effects": [
+      {
+       "id": "{1d29179e-50cb-4abf-82d7-1537bc757f1d}",
+       "bypass": false,
+       "type": "MixerBusFader",
+       "kind": "Fader",
+       "name": "",
+       "fader": true,
+       "settings": {
+        "bypass": false,
+        "wetDryEnabled": false,
+        "wetDryMode": 0,
+        "activeWhenSilent": false,
+        "inputGainEnabled": false,
+        "wetMix": 100,
+        "baseWetLevel": 0,
+        "baseDryLevel": -80,
+        "inputGain": 0
+       },
+       "automation": [],
+       "modulation": [],
+       "snapshots": []
+      },
+      {
+       "id": "{17a075f5-9485-4906-b45d-a9438635f2dc}",
+       "bypass": false,
+       "type": "MixerSend",
+       "kind": "Send",
+       "name": "",
+       "level": -10,
+       "to": "Reverb",
+       "settings": {
+        "bypass": false,
+        "wetDryEnabled": false,
+        "wetDryMode": 0,
+        "activeWhenSilent": false,
+        "inputGainEnabled": false,
+        "wetMix": 100,
+        "baseWetLevel": 0,
+        "baseDryLevel": -80,
+        "inputGain": 0,
+        "level": -10,
+        "inputFormat": 0
+       },
+       "automation": [],
+       "modulation": [],
+       "snapshots": []
+      }
+     ],
+     "vcas": [],
+     "snapshots": []
+    }
+   },
+   {
+    "id": "{0d4d2e31-cc85-4fb3-82a9-a6b5c5ac25ba}",
+    "name": "A_leaf",
+    "path": "event:/A_leaf",
+    "snapshot": false,
+    "color": "Red",
+    "master": {
+     "id": "{68f1a933-000e-47c5-996a-161b1a30c8b8}",
+     "type": "EventMixerMaster",
+     "kind": "Master track",
+     "name": "Master",
+     "color": "Default",
+     "volume": 0,
+     "pitch": 0,
+     "automation": [],
+     "modulation": [],
+     "effects": [
+      {
+       "id": "{d1146beb-73de-4222-a6bd-986f2972ffae}",
+       "bypass": false,
+       "type": "MixerBusFader",
+       "kind": "Fader",
+       "name": "",
+       "fader": true,
+       "settings": {
+        "bypass": false,
+        "wetDryEnabled": false,
+        "wetDryMode": 0,
+        "activeWhenSilent": false,
+        "inputGainEnabled": false,
+        "wetMix": 100,
+        "baseWetLevel": 0,
+        "baseDryLevel": -80,
+        "inputGain": 0
+       },
+       "automation": [],
+       "modulation": [],
+       "snapshots": []
+      },
+      {
+       "id": "{d9ca58e8-c50c-47a3-b25e-a86f556af041}",
+       "bypass": false,
+       "type": "MixerSend",
+       "kind": "Send",
+       "name": "",
+       "level": -6,
+       "to": "Reverb",
+       "settings": {
+        "bypass": false,
+        "wetDryEnabled": false,
+        "wetDryMode": 0,
+        "activeWhenSilent": false,
+        "inputGainEnabled": false,
+        "wetMix": 100,
+        "baseWetLevel": 0,
+        "baseDryLevel": -80,
+        "inputGain": 0,
+        "level": -6,
+        "inputFormat": 0
+       },
+       "automation": [],
+       "modulation": [],
+       "snapshots": []
+      }
+     ],
+     "vcas": [],
+     "snapshots": []
+    },
+    "macros": {
+     "settings": {
+      "isPersistent": false,
+      "maxVoices": 65,
+      "voiceStealing": 0,
+      "priority": 2,
+      "dopplerEnabled": false,
+      "dopplerScale": 100,
+      "snapshotIntensity": 100,
+      "minimumDistance": 1,
+      "maximumDistance": 20,
+      "noLookahead": false,
+      "triggerCooldown": 0,
+      "sampleDataLoadingMode": 0
+     },
+     "automation": [
+      {
+       "property": "maximumDistance",
+       "curves": [
+        {
+         "param": {
+          "id": "{139461be-e2fb-4594-b472-3042a7e5135e}",
+          "name": "Intensity"
+         },
+         "points": []
+        }
+       ]
+      }
+     ],
+     "modulation": []
+    },
+    "snapshots": [],
+    "usedBy": 3,
+    "banks": [],
+    "kind": "event",
+    "isFocus": false,
+    "depth": 2,
+    "label": "Event"
+   },
+   {
+    "id": "{75cb9f6b-7733-4a4c-b77a-ecced5be7a05}",
+    "name": "Master Bus",
+    "path": "",
+    "kind": "bus",
+    "isFocus": false,
+    "depth": -1,
+    "label": "Master Bus",
+    "color": "Default",
+    "strip": {
+     "id": "{75cb9f6b-7733-4a4c-b77a-ecced5be7a05}",
+     "type": "MixerMaster",
+     "kind": "Master Bus",
+     "name": "Master Bus",
+     "color": "Default",
+     "volume": 0,
+     "pitch": 0,
+     "automation": [],
+     "modulation": [],
+     "effects": [
+      {
+       "id": "{84e51193-59b3-4f2e-ad76-c16144006884}",
+       "bypass": false,
+       "type": "MixerBusFader",
+       "kind": "Fader",
+       "name": "",
+       "fader": true,
+       "settings": {
+        "bypass": false,
+        "wetDryEnabled": false,
+        "wetDryMode": 0,
+        "activeWhenSilent": false,
+        "inputGainEnabled": false,
+        "wetMix": 100,
+        "baseWetLevel": 0,
+        "baseDryLevel": -80,
+        "inputGain": 0
+       },
+       "automation": [],
+       "modulation": [],
+       "snapshots": []
+      }
+     ],
+     "vcas": [],
+     "snapshots": []
+    }
+   }
+  ],
+  "edges": [
+   {
+    "id": "{21cc3aa0-97e4-4636-b7b5-9e0e9934e9fc}>{098c9081-b78f-4b5c-94b8-bd9949a36327}",
+    "kind": "route",
+    "childId": "{21cc3aa0-97e4-4636-b7b5-9e0e9934e9fc}",
+    "parentId": "{098c9081-b78f-4b5c-94b8-bd9949a36327}"
+   },
+   {
+    "id": "{0ad05813-f8b2-46a4-b7c6-842ce3285ab6}>{21cc3aa0-97e4-4636-b7b5-9e0e9934e9fc}",
+    "kind": "route",
+    "childId": "{0d4d2e31-cc85-4fb3-82a9-a6b5c5ac25ba}",
+    "parentId": "{21cc3aa0-97e4-4636-b7b5-9e0e9934e9fc}"
+   },
+   {
+    "id": "{098c9081-b78f-4b5c-94b8-bd9949a36327}>{75cb9f6b-7733-4a4c-b77a-ecced5be7a05}",
+    "kind": "route",
+    "childId": "{098c9081-b78f-4b5c-94b8-bd9949a36327}",
+    "parentId": "{75cb9f6b-7733-4a4c-b77a-ecced5be7a05}"
+   }
+  ],
+  "truncated": false,
+  "maxDepth": 8,
+  "maxNodes": 300
+ },
+ "params": {
+  "{139461be-e2fb-4594-b472-3042a7e5135e}": {
+   "id": "{139461be-e2fb-4594-b472-3042a7e5135e}",
+   "name": "Intensity",
+   "type": 0,
+   "min": 0,
+   "max": 10,
+   "initial": 2,
+   "cursor": 6,
+   "labels": [],
+   "global": false,
+   "readOnly": false,
+   "hold": false,
+   "velocity": 0
+  }
+ }
+}

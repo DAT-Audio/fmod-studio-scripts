@@ -1,0 +1,35 @@
+{
+  "format": "dat-automation-curve",
+  "version": 1,
+  "id": "factory-panning-full-circle-from-the-front-anticlockwise",
+  "name": "Full circle from the front, anticlockwise",
+  "description": "For Direction (-180 to 180): 0 \u2192 -180, wraps to 180, back to 0.",
+  "points": [
+    {
+      "x": 0,
+      "y": 0.5,
+      "shape": 0.0,
+      "s": false
+    },
+    {
+      "x": 0.5,
+      "y": 0,
+      "shape": 0.0,
+      "s": false
+    },
+    {
+      "x": 0.501,
+      "y": 1,
+      "shape": 0.0,
+      "s": false
+    },
+    {
+      "x": 1,
+      "y": 0.5,
+      "shape": 0.0,
+      "s": false
+    }
+  ],
+  "created": "2026-10-10T00:00:00.000Z",
+  "modified": "2026-10-10T00:00:00.000Z"
+}

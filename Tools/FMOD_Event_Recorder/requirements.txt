@@ -1,0 +1,15 @@
+# FMOD Event Recorder — Python dependencies
+#
+# Installed automatically by setup.command. (Manual equivalent:
+#   python3 -m venv venv
+#   venv/bin/python -m pip install -r requirements.txt )
+#
+# Versions are intentionally UNPINNED so pip resolves libraries compatible with
+# whatever Python version you have (e.g. numpy 2.x on Python 3.11+, or the older
+# numpy 1.26 line on Python 3.9). The FMOD libraries themselves are NOT pip
+# packages — they are the bundled dylibs in libs/macos/.
+
+pyfmodex        # FMOD ctypes bindings (uses the bundled dylibs in libs/macos/)
+numpy
+soundfile       # bundles libsndfile (WAV / AIFF / FLAC / MP3)
+pyloudnorm      # LUFS-I loudness normalization (pulls in scipy); optional — remove if unused

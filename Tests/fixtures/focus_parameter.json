@@ -1,0 +1,146 @@
+{
+ "type": "focus",
+ "kind": "parameter",
+ "selection": {
+  "count": 1,
+  "others": {},
+  "more": 0,
+  "source": "browser"
+ },
+ "param": {
+  "id": "{139461be-e2fb-4594-b472-3042a7e5135e}",
+  "name": "Intensity",
+  "type": 0,
+  "min": 0,
+  "max": 10,
+  "initial": 2,
+  "cursor": 6,
+  "labels": [],
+  "global": false,
+  "readOnly": false,
+  "hold": false,
+  "velocity": 0
+ },
+ "uses": [
+  {
+   "kind": "condition",
+   "event": {
+    "id": "{236db72d-3554-4082-82c4-5584faaba0e1}",
+    "name": "B_mid",
+    "path": "event:/B_mid",
+    "snapshot": false,
+    "color": "Default"
+   },
+   "target": "Event instrument 'A_leaf'",
+   "targetId": "{f466be53-656b-4379-8384-db6174784481}",
+   "min": 3,
+   "max": 7,
+   "inverted": false
+  },
+  {
+   "kind": "automation",
+   "event": {
+    "id": "{236db72d-3554-4082-82c4-5584faaba0e1}",
+    "name": "B_mid",
+    "path": "event:/B_mid",
+    "snapshot": false,
+    "color": "Default"
+   },
+   "target": "Track 'B track'",
+   "targetId": "{543a86ae-c834-4aa2-8bbd-8da4e1d1b543}",
+   "property": "volume",
+   "points": [
+    [
+     0,
+     -20,
+     0.5,
+     false
+    ],
+    [
+     10,
+     0,
+     0,
+     false
+    ]
+   ]
+  },
+  {
+   "kind": "macro",
+   "event": {
+    "id": "{0d4d2e31-cc85-4fb3-82a9-a6b5c5ac25ba}",
+    "name": "A_leaf",
+    "path": "event:/A_leaf",
+    "snapshot": false,
+    "color": "Red"
+   },
+   "target": "Event macros",
+   "targetId": "{731b703a-a190-4fbb-8dcd-6a3065499277}",
+   "property": "maximumDistance",
+   "points": []
+  },
+  {
+   "kind": "modulation",
+   "event": {
+    "id": "{236db72d-3554-4082-82c4-5584faaba0e1}",
+    "name": "B_mid",
+    "path": "event:/B_mid",
+    "snapshot": false,
+    "color": "Default"
+   },
+   "target": "Randomizer modulator",
+   "targetId": "{c357051e-cb55-4b33-b58f-dc97b0774567}",
+   "property": "amount",
+   "points": [],
+   "modulates": "Event instrument 'A_leaf' volume"
+  },
+  {
+   "kind": "exposed",
+   "event": {
+    "id": "{0d4d2e31-cc85-4fb3-82a9-a6b5c5ac25ba}",
+    "name": "A_leaf",
+    "path": "event:/A_leaf",
+    "snapshot": false,
+    "color": "Red"
+   },
+   "target": "Parameter in event:/A_leaf"
+  },
+  {
+   "kind": "passed",
+   "event": {
+    "id": "{236db72d-3554-4082-82c4-5584faaba0e1}",
+    "name": "B_mid",
+    "path": "event:/B_mid",
+    "snapshot": false,
+    "color": "Default"
+   },
+   "child": {
+    "id": "{0d4d2e31-cc85-4fb3-82a9-a6b5c5ac25ba}",
+    "name": "A_leaf",
+    "path": "event:/A_leaf",
+    "snapshot": false,
+    "color": "Red"
+   },
+   "target": "Event instrument 'A_leaf'",
+   "targetId": "{f466be53-656b-4379-8384-db6174784481}",
+   "value": 4.5,
+   "automation": []
+  }
+ ],
+ "sandbox": 0,
+ "params": {
+  "{139461be-e2fb-4594-b472-3042a7e5135e}": {
+   "id": "{139461be-e2fb-4594-b472-3042a7e5135e}",
+   "name": "Intensity",
+   "type": 0,
+   "min": 0,
+   "max": 10,
+   "initial": 2,
+   "cursor": 6,
+   "labels": [],
+   "global": false,
+   "readOnly": false,
+   "hold": false,
+   "velocity": 0
+  }
+ }
+}
